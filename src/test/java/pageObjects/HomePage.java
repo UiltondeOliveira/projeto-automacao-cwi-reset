@@ -13,4 +13,22 @@ public class HomePage extends HomePageElementMapper {
     public void clickBtnLogin(){
         login.click();
     }
+
+    public void clickSearchBox(){
+        searchBox.click();
+    }
+
+    public void sendKeysSearchBox(String keys){
+        searchBox.sendKeys(keys);
+    }
+
+    public void clickBtnSubmitSearch(){
+        btnSubmitSearch.click();
+    }
+
+    public void doSearch(String quest){
+        clickSearchBox();
+        sendKeysSearchBox(quest);
+        clickBtnSubmitSearch();
+    }
 }

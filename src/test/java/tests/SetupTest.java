@@ -1,12 +1,16 @@
 package tests;
 
+import org.hamcrest.CoreMatchers;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.SearchPage;
 import utils.Browser;
 import utils.Utils;
 
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class SetupTest extends BaseTests{
@@ -41,5 +45,23 @@ public class SetupTest extends BaseTests{
         assertTrue(Browser.getCurrentDriver().findElement(By.className("page-heading"))
         .getText().contains("MY ACCOUNT"));
         System.out.println("Validou Minha Conta no site");
+    }
+
+    @Test
+    public void testSearch(){
+
+        String quest = "DRESS";
+        String questResult = "7";
+//        Iniciar as páginas
+        HomePage home = new HomePage();
+        SearchPage search = new SearchPage();
+
+//        Fazer a pesquisa
+        home.doSearch(quest);
+
+//      Validar a pesquisa
+        Assert.assertTrue(search.isSearchPage());
+        Assert.assertEquals(search.getTextLighter().replace("\"",""),quest);
+        assertThat(search.getTextHeadingCounter(), CoreMatchers.containsString(questResult));
     }
 }
