@@ -2,6 +2,8 @@ package tests;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
 import utils.Browser;
 import utils.Utils;
 
@@ -17,19 +19,27 @@ public class SetupTest extends BaseTests{
 
     @Test
     public void testLogin(){
-       Browser.getCurrentDriver().findElement(By.className("login")).click();
+
+        //Inciar as páginas
+        HomePage home = new HomePage();
+        LoginPage login = new LoginPage();
+
+        home.clickBtnLogin();
         System.out.println("Clicou em Sign In e redirecionou para a página de login");
         assertTrue(Browser.getCurrentDriver().getCurrentUrl()
         .contains(Utils.getBaseUrl().concat("index.php?controller=authentication&back=my-account")));
-        Browser.getCurrentDriver().findElement(By.id("email")).sendKeys("uiltondeoliveira@gmail.com");
+
+        login.fillEmail();
         System.out.println("Preencheu o Login");
-        Browser.getCurrentDriver().findElement(By.id("passwd")).sendKeys("12345");
+        login.fillPasswd();
         System.out.println("Preencheu a senha");
-        Browser.getCurrentDriver().findElement(By.id("SubmitLogin")).click();
+        login.clickBtnSubmitLogin();
         System.out.println("Clicou em Sign In");
-        assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl().concat("index.php?controller=my-account")));
+        assertTrue(Browser.getCurrentDriver().getCurrentUrl()
+        .contains(Utils.getBaseUrl().concat("index.php?controller=my-account")));
         System.out.println("Valida a url da minha conta");
-        assertTrue(Browser.getCurrentDriver().findElement(By.className("page-heading")).getText().contains("MY ACCOUNT"));
+        assertTrue(Browser.getCurrentDriver().findElement(By.className("page-heading"))
+        .getText().contains("MY ACCOUNT"));
         System.out.println("Validou Minha Conta no site");
     }
 }
