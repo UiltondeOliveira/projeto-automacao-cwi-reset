@@ -12,4 +12,7 @@ public class HomePageElementMapper {
 
     @FindBy(name = "submit_search")
     public WebElement btnSubmitSearch;
+
+    @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[3]/a")
+    public WebElement menuTShirts;
 }

@@ -64,4 +64,13 @@ public class SetupTest extends BaseTests{
         Assert.assertEquals(search.getTextLighter().replace("\"",""),quest);
         assertThat(search.getTextHeadingCounter(), CoreMatchers.containsString(questResult));
     }
+
+    @Test
+    public void testAccessCategoryTSshirts(){
+//      Iniciar as páginas
+        HomePage home = new HomePage();
+
+//      Clicar na categoria T-Shirt
+        home.clickCategoryTShirts();
+    }
 }
