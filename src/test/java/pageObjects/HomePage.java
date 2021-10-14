@@ -1,6 +1,7 @@
 package pageObjects;
 
 import elementMapper.HomePageElementMapper;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 import utils.Browser;
 
@@ -33,6 +34,6 @@ public class HomePage extends HomePageElementMapper {
     }
 
     public void clickCategoryTShirts(){
-    menuTShirts.click();
+        menuTShirts.click();
     }
 }

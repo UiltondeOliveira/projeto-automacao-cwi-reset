@@ -4,6 +4,7 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import pageObjects.CategoryPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.SearchPage;
@@ -69,8 +70,12 @@ public class SetupTest extends BaseTests{
     public void testAccessCategoryTSshirts(){
 //      Iniciar as páginas
         HomePage home = new HomePage();
+        CategoryPage category = new CategoryPage();
 
 //      Clicar na categoria T-Shirt
         home.clickCategoryTShirts();
+
+//      Validar se ao clicar na categoria T-Shirts ocorre o redirecionamento correto
+        assertTrue(category.isPageTShirts());
     }
 }

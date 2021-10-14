@@ -13,6 +13,6 @@ public class HomePageElementMapper {
     @FindBy(name = "submit_search")
     public WebElement btnSubmitSearch;
 
-    @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[3]/a")
+    @FindBy(css = "#block_top_menu .sf-menu li:nth-child(3) a[title=T-shirts]")
     public WebElement menuTShirts;
 }
