@@ -4,10 +4,7 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import pageObjects.CategoryPage;
-import pageObjects.HomePage;
-import pageObjects.LoginPage;
-import pageObjects.SearchPage;
+import pageObjects.*;
 import utils.Browser;
 import utils.Utils;
 
@@ -77,5 +74,24 @@ public class SetupTest extends BaseTests{
 
 //      Validar se ao clicar na categoria T-Shirts ocorre o redirecionamento correto
         assertTrue(category.isPageTShirts());
+    }
+
+    @Test
+    public void testAddProductToProductPage(){
+//      Acessar a categoria T-Shirts
+        testAccessCategoryTSshirts();
+
+//      Inicia as páginas
+        CategoryPage category = new CategoryPage();
+        ProductPage pdp = new ProductPage();
+
+//      Salva o nome do produto na página de categoria
+        String nameProductCategory = category.getProductNameCategory();
+
+//      Clicar em More e direcionar para a página do produto
+        category.clickProductAddToProductPage();
+
+//      Validar se o produto está na página de detalhes do produto corretamente
+        assertTrue(pdp.getProductNamePDP().equals(nameProductCategory));
     }
 }
