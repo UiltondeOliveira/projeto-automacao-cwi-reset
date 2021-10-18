@@ -9,6 +9,7 @@ public class CategoryPage extends CategoryPageElementMapper {
     public CategoryPage(){
         PageFactory.initElements(Browser.getCurrentDriver(),this);
     }
+
     public boolean isPageTShirts(){
         return getAuthenticationPageTShirts().contains("T-SHIRTS");
     }

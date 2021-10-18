@@ -94,4 +94,44 @@ public class SetupTest extends BaseTests{
 //      Validar se o produto está na página de detalhes do produto corretamente
         assertTrue(pdp.getProductNamePDP().equals(nameProductCategory));
     }
+
+    @Test
+    public void testCreateAnAccount(){
+        String firstName = "José";
+        String lastName = "Rodrigues";
+        String mail = "joserodrigues@gmail.com";
+        String pass = "12345";
+        String day = "14";
+        String month = "5";
+        String year = "1987";
+
+//      Inicia as páginas
+        HomePage home = new HomePage();
+        LoginPage createAccount = new LoginPage();
+        CreateAnAccountPage account = new CreateAnAccountPage();
+
+//      Clica  no botãao login e redireciona para a página de login
+        home.clickBtnLogin();
+        System.out.println("Clicou em Sign In e redirecionou para a página de login");
+        assertTrue(Browser.getCurrentDriver().getCurrentUrl()
+        .contains(Utils.getBaseUrl().concat("index.php?controller=authentication&back=my-account")));
+
+//      Insere o email no campo email adress e clica no botão Create an Account
+        createAccount.fillEmailAdress(mail);
+        System.out.println("Preencheu o campo Email Adress");
+        createAccount.clickBtnCreateAnAccout();
+        System.out.println("Clicou no botão Create an Account");
+
+//      Insere as informações na página Create An Account
+        account.clickRadioGender();
+        account.fillFirstName(firstName);
+        account.fillLastName(lastName);
+        account.checkMail();
+        account.fillPasswd(pass);
+        account.clickDayOfBirthday(day);
+        account.clickMonthOfBirthday(month);
+        account.clickYearOfBirthday(year);
+
+
+    }
 }

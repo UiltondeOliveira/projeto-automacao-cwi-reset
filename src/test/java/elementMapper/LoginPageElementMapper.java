@@ -10,4 +10,9 @@ public class LoginPageElementMapper {
 
     public WebElement SubmitLogin;
 
+    public WebElement email_create;
+
+    public WebElement SubmitCreate;
+
+
 }
