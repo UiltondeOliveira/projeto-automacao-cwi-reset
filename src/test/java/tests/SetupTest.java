@@ -8,8 +8,7 @@ import pageObjects.*;
 import utils.Browser;
 import utils.Utils;
 
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class SetupTest extends BaseTests{
 
@@ -97,6 +96,7 @@ public class SetupTest extends BaseTests{
 
     @Test
     public void testCreateAnAccount(){
+
         String firstName = "José";
         String lastName = "Rodrigues";
         String mail = "joserodrigues@gmail.com";
@@ -122,10 +122,14 @@ public class SetupTest extends BaseTests{
         createAccount.clickBtnCreateAnAccout();
         System.out.println("Clicou no botão Create an Account");
 
+//      Validar se ao clicar na Create An Account ocorre o redirecionamento correto
+//      Assert.assertTrue(account.isPageCreateAnAccount());
+
+
 //      Insere as informações na página Create An Account
         account.clickRadioGender();
-        account.fillFirstName(firstName);
-        account.fillLastName(lastName);
+        account.fillCFirstName(firstName);
+        account.fillCLastName(lastName);
         account.checkMail();
         account.fillPasswd(pass);
         account.clickDayOfBirthday(day);
