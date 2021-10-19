@@ -1,5 +1,8 @@
 package tests;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.junit4.DisplayName;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
@@ -95,15 +98,31 @@ public class SetupTest extends BaseTests{
     }
 
     @Test
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Verificar a criação de uma conta de usuário")
     public void testCreateAnAccount(){
-
-        String firstName = "José";
-        String lastName = "Rodrigues";
-        String mail = "joserodrigues@gmail.com";
+//      Variáveis
+        String cFirstName = "Clarck";
+        String cLastName = "Joseph Kent";
+        String mail = "cjkent1@gmail.com";
         String pass = "12345";
-        String day = "14";
-        String month = "5";
-        String year = "1987";
+        String day = "28";
+        String month = "6";
+        String year = "1938";
+        String firstName = "";
+        String lastName = "";
+        String company = "DC Comics";
+        String address1 = "Street Joe Shuster, 1129";
+        String address2 = "Jupter";
+        String city = " Cleveland";
+        String state = "Ohio";
+        String zipCode = "44197";
+        String country = "";
+        String adtInformation = "";
+        String homePhone = "555-0123";
+        String mobPhone = "555-0124";
+        String alias = "Via láctea";
+
 
 //      Inicia as páginas
         HomePage home = new HomePage();
@@ -125,17 +144,30 @@ public class SetupTest extends BaseTests{
 //      Validar se ao clicar na Create An Account ocorre o redirecionamento correto
 //      Assert.assertTrue(account.isPageCreateAnAccount());
 
-
 //      Insere as informações na página Create An Account
         account.clickRadioGender();
-        account.fillCFirstName(firstName);
-        account.fillCLastName(lastName);
+        account.fillCFirstName(cFirstName);
+        account.fillCLastName(cLastName);
         account.checkMail();
         account.fillPasswd(pass);
         account.clickDayOfBirthday(day);
         account.clickMonthOfBirthday(month);
         account.clickYearOfBirthday(year);
-
-
+        account.clickNewsLetter();
+        account.clickSpecialOffers();
+        account.fillFirstName(firstName);
+        account.fillLastName(lastName);
+        account.fillCompany(company);
+        account.fillAddress1(address1);
+        account.fillAddress2(address2);
+        account.fillCity(city);
+        account.clickState(state);
+        account.fillZipCode(zipCode);
+        account.clickCountry();
+        account.fillAdtIformation(adtInformation);
+        account.fillHomePhone(homePhone);
+        account.fillMobilePhone(mobPhone);
+        account.fillAliasAdress(alias);
+        account.clickBtnRegister();
     }
 }

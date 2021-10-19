@@ -11,10 +11,10 @@ public class CreateAnAccountPageElementMapper {
     @FindBy(id = "id_gender1")
     public WebElement radioGender;
 
-    @FindBy(id = "customer_firstname")
+    @FindBy(css = "#customer_firstname")
     public WebElement cFirstName;
 
-    @FindBy(id = "customer_lastname")
+    @FindBy(css = "#customer_lastname")
     public WebElement cLastName;
 
     public WebElement email;
@@ -37,35 +37,38 @@ public class CreateAnAccountPageElementMapper {
 
     public WebElement years;
 
-    @FindBy(css = "checker")
-    public WebElement checkBox;
+    @FindBy(id = "newsletter")
+    public WebElement newsLetter;
+
+    @FindBy(id = "optin")
+    public WebElement offers;
 
     @FindBy(xpath = "//*[@id=\"noSlide\"]/h1")
     public WebElement titlePage;
 
-    @FindBy(id = "firstname")
+    @FindBy(css = "#firstname")
     public WebElement firstName;
 
-    @FindBy(id = "lastname")
+    @FindBy(css = "#lastname")
     public WebElement lastName;
 
     public WebElement company;
 
-    public WebElement adress1;
+    public WebElement address1;
 
-    public WebElement adress2;
+    public WebElement address2;
 
     public WebElement city;
 
     @FindBy(id = "uniform-id_state")
-    public WebElement SelectState;
+    public WebElement selectState;
 
     public WebElement id_state;
 
     public WebElement postcode;
 
     @FindBy(id = "uniform-id_country")
-    public WebElement SelectCountry;
+    public WebElement selectCountry;
 
     public WebElement id_country;
 
@@ -77,6 +80,6 @@ public class CreateAnAccountPageElementMapper {
 
     public WebElement alias;
 
-    @FindBy(id="submitAccountsubmitAccount")
+    @FindBy(id="submitAccount")
     public WebElement btnSubmitAccount;
 }

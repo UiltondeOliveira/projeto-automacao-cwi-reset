@@ -55,31 +55,72 @@ public class CreateAnAccountPage extends CreateAnAccountPageElementMapper {
     }
 
     public void clickNewsLetter(){
-
+        BasePage.mouseOver(newsLetter);
+        newsLetter.click();
     }
 
     public void clickSpecialOffers(){
-
+        BasePage.mouseOver(offers);
+        offers.click();
     }
 
-    public void fillFistName(){
-
+    public void fillFirstName(String fName){
+        firstName.sendKeys(fName);
     }
 
-    public void fillLastName(){
-
+    public void fillLastName(String lName){
+        lastName.sendKeys(lName);
     }
 
-    public void fillCompany(){
-
+    public void fillCompany(String nCompany){
+        company.sendKeys(nCompany);
     }
 
-    public void fillAddress1(){
-
+    public void fillAddress1(String adrs1){
+        address1.sendKeys(adrs1);
     }
 
-    public void fillAddress2(){
+    public void fillAddress2(String adrs2){
+        address2.sendKeys(adrs2);
+    }
 
+    public void fillCity(String nCity){
+        city.sendKeys(nCity);
+    }
+
+    public void clickState(String nState){
+        BasePage.mouseOver(selectState);
+        selectState.click();
+        Select dropDown = new Select(id_state);
+        dropDown.selectByVisibleText(nState);
+    }
+
+    public void fillZipCode(String zpCode){
+        postcode.sendKeys(zpCode);
+    }
+
+    public void clickCountry(){
+        selectCountry.click();
+    }
+
+    public void fillAdtIformation(String adtInoformation){
+        other.sendKeys(adtInoformation);
+    }
+
+    public void fillHomePhone(String homePhone){
+        phone.sendKeys(homePhone);
+    }
+
+    public void fillMobilePhone(String mobPhone){
+        phone_mobile.sendKeys(mobPhone);
+    }
+
+    public void fillAliasAdress(String aliasAdress){
+        alias.sendKeys(aliasAdress);
+    }
+
+    public void clickBtnRegister(){
+        btnSubmitAccount.click();
     }
 
 }

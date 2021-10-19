@@ -6,8 +6,10 @@ utils\Utils.class
 pageObjects\CategoryPage.class
 pageObjects\HomePage.class
 pageObjects\MyAccountPage.class
+elementMapper\CreateAnAccountPageElementMapper.class
 pageObjects\ProductPage.class
 tests\BaseTests.class
+pageObjects\CreateAnAccountPage.class
 elementMapper\MyAccountPageElementMapper.class
 elementMapper\HomePageElementMapper.class
 pageObjects\LoginPage.class
