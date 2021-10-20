@@ -117,7 +117,6 @@ public class SetupTest extends BaseTests{
         String city = " Cleveland";
         String state = "Ohio";
         String zipCode = "44197";
-        String country = "";
         String adtInformation = "";
         String homePhone = "555-0123";
         String mobPhone = "555-0124";
@@ -174,4 +173,33 @@ public class SetupTest extends BaseTests{
         assertTrue(Browser.getCurrentDriver().findElement(By.className("page-heading"))
         .getText().contains("MY ACCOUNT"));
     }
+
+    @Test
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Verificar a compra de um produto")
+    public void testShoppingCart(){
+
+        String size = "M";
+
+//      Inicia as páginas
+        HomePage home = new HomePage();
+        ProductPage product = new ProductPage();
+        testAccessCategoryTSshirts();
+
+//      Clica no botão Quick View
+        product.clickQuickView();
+
+//      Seleciona os detalhes do produto
+
+        product.clickQty();
+        //product.clickSelectSize(size);
+        //product.selectColor();
+        //product.clickBtnAddToCart();
+
+
+
+
+
+    }
+
 }

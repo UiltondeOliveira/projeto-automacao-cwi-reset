@@ -10,4 +10,5 @@ public class BasePage extends Browser {
         Actions action = new Actions((Browser.getCurrentDriver()));
         action.moveToElement(element).build().perform();
     }
+
 }

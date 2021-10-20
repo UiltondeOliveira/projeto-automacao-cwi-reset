@@ -46,12 +46,6 @@ public class CreateAnAccountPageElementMapper {
     @FindBy(id = "optin")
     public WebElement offers;
 
-    @FindBy(css = "#firstname")
-    public WebElement firstName;
-
-    @FindBy(css = "#lastname")
-    public WebElement lastName;
-
     public WebElement company;
 
     public WebElement address1;
