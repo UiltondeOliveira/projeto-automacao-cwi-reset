@@ -64,14 +64,6 @@ public class CreateAnAccountPage extends CreateAnAccountPageElementMapper {
         offers.click();
     }
 
-    public void fillFirstName(String fName){
-        firstName.sendKeys(fName);
-    }
-
-    public void fillLastName(String lName){
-        lastName.sendKeys(lName);
-    }
-
     public void fillCompany(String nCompany){
         company.sendKeys(nCompany);
     }

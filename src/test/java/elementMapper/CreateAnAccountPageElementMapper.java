@@ -5,6 +5,9 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class CreateAnAccountPageElementMapper {
+    @FindBy(css = "#noSlide > h1")
+    public WebElement pageTitle;
+
     @FindBy(css = ".clearfix .radio-inline")
     public WebElement gender;
 
@@ -43,9 +46,6 @@ public class CreateAnAccountPageElementMapper {
     @FindBy(id = "optin")
     public WebElement offers;
 
-    @FindBy(xpath = "//*[@id=\"noSlide\"]/h1")
-    public WebElement titlePage;
-
     @FindBy(css = "#firstname")
     public WebElement firstName;
 
@@ -69,8 +69,6 @@ public class CreateAnAccountPageElementMapper {
 
     @FindBy(id = "uniform-id_country")
     public WebElement selectCountry;
-
-    public WebElement id_country;
 
     public WebElement other;
 

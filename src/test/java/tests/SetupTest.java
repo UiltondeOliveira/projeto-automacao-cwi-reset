@@ -11,6 +11,8 @@ import pageObjects.*;
 import utils.Browser;
 import utils.Utils;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.*;
 
 public class SetupTest extends BaseTests{
@@ -94,7 +96,7 @@ public class SetupTest extends BaseTests{
         category.clickProductAddToProductPage();
 
 //      Validar se o produto está na página de detalhes do produto corretamente
-        assertTrue(pdp.getProductNamePDP().equals(nameProductCategory));
+        Assert.assertTrue(pdp.getProductNamePDP().equals(nameProductCategory));
     }
 
     @Test
@@ -104,13 +106,11 @@ public class SetupTest extends BaseTests{
 //      Variáveis
         String cFirstName = "Clarck";
         String cLastName = "Joseph Kent";
-        String mail = "cjkent1@gmail.com";
+        String mail = "cjkent4@gmail.com";
         String pass = "12345";
         String day = "28";
         String month = "6";
         String year = "1938";
-        String firstName = "";
-        String lastName = "";
         String company = "DC Comics";
         String address1 = "Street Joe Shuster, 1129";
         String address2 = "Jupter";
@@ -129,7 +129,7 @@ public class SetupTest extends BaseTests{
         LoginPage createAccount = new LoginPage();
         CreateAnAccountPage account = new CreateAnAccountPage();
 
-//      Clica  no botãao login e redireciona para a página de login
+//      Clica  no botão login e redireciona para a página de login
         home.clickBtnLogin();
         System.out.println("Clicou em Sign In e redirecionou para a página de login");
         assertTrue(Browser.getCurrentDriver().getCurrentUrl()
@@ -140,9 +140,6 @@ public class SetupTest extends BaseTests{
         System.out.println("Preencheu o campo Email Adress");
         createAccount.clickBtnCreateAnAccout();
         System.out.println("Clicou no botão Create an Account");
-
-//      Validar se ao clicar na Create An Account ocorre o redirecionamento correto
-//      Assert.assertTrue(account.isPageCreateAnAccount());
 
 //      Insere as informações na página Create An Account
         account.clickRadioGender();
@@ -155,8 +152,6 @@ public class SetupTest extends BaseTests{
         account.clickYearOfBirthday(year);
         account.clickNewsLetter();
         account.clickSpecialOffers();
-        account.fillFirstName(firstName);
-        account.fillLastName(lastName);
         account.fillCompany(company);
         account.fillAddress1(address1);
         account.fillAddress2(address2);
@@ -168,6 +163,15 @@ public class SetupTest extends BaseTests{
         account.fillHomePhone(homePhone);
         account.fillMobilePhone(mobPhone);
         account.fillAliasAdress(alias);
+
+//      Validar se ao clicar na Create An Account ocorre o redirecionamento correto
+        assertTrue(Browser.getCurrentDriver().findElement(By.className("page-heading"))
+        .getText().contains("CREATE AN ACCOUNT"));
+
         account.clickBtnRegister();
+
+//      Validar se ao criar a conta o cliente foi para a página My Account
+        assertTrue(Browser.getCurrentDriver().findElement(By.className("page-heading"))
+        .getText().contains("MY ACCOUNT"));
     }
 }
