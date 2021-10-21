@@ -15,30 +15,4 @@ public class ProductPage extends ProductPageElementMapper {
         return productNamePDP.getText();
     }
 
-    public void clickQuickView(){
-        BasePage.mouseOver(productBlock);
-        quickView.click();
-    }
-
-    public void clickQty(){
-        quantity.click();
-        quantity.sendKeys("2");
-    }
-
-    public void clickSelectSize(String size){
-        BasePage.mouseOver(selectSize);
-        selectSize.click();
-        Select dropDown = new Select(sizeSelected);
-        dropDown.selectByVisibleText(size);
-    }
-
-    public void selectColor(){
-        BasePage.mouseOver(selectColor);
-        color.click();
-    }
-
-    public void clickBtnAddToCart(){
-        BasePage.mouseOver(btnAddToCart);
-        btnAddToCart.click();
-    }
 }

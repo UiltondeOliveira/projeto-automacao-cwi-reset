@@ -11,7 +11,7 @@ import pageObjects.*;
 import utils.Browser;
 import utils.Utils;
 
-import java.util.concurrent.TimeUnit;
+import java.util.Random;
 
 import static org.junit.Assert.*;
 
@@ -104,10 +104,14 @@ public class SetupTest extends BaseTests{
     @DisplayName("Verificar a criação de uma conta de usuário")
     public void testCreateAnAccount(){
 //      Variáveis
+
+        Random random = new Random();
+        int id = random.nextInt(10);
+
         String cFirstName = "Clarck";
         String cLastName = "Joseph Kent";
-        String mail = "cjkent4@gmail.com";
-        String pass = "12345";
+        String mail = "superman"+ id+ "@gmail.com";
+        String pass = "19302021";
         String day = "28";
         String month = "6";
         String year = "1938";
@@ -179,23 +183,48 @@ public class SetupTest extends BaseTests{
     @DisplayName("Verificar a compra de um produto")
     public void testShoppingCart(){
 
+        String qty = "2";
         String size = "M";
 
+        testLogin();
+        testSearch();
+
 //      Inicia as páginas
-        HomePage home = new HomePage();
-        ProductPage product = new ProductPage();
-        testAccessCategoryTSshirts();
+        SearchPage search = new SearchPage();
+        ShoppingCartPage shop = new ShoppingCartPage();
+//      Seleciona o produto
+        search.clickSelectedProduct();
+//      Seleciona a quantidade do produto
+        search.fillQty(qty);
+//      Seleciona o tamanho do produto
+        search.clickSelectSize(size);
+//      Seleciona a cor do produto
+        search.selectColor();
 
-//      Clica no botão Quick View
-        product.clickQuickView();
+//      Guarda o nome do produto e valor para conferir na finalização da compra
+        String productName = search.getProductNameAddToCart();
+        String productPrice = search.getProductPriceAddToCart();
 
-//      Seleciona os detalhes do produto
+//      Adiciona o produto ao carrinho
+        search.clickBtnAddToCart();
 
-        product.clickQty();
-        //product.clickSelectSize(size);
-        //product.selectColor();
-        //product.clickBtnAddToCart();
+//      Confirmação dos dados do cliente e do produto
+        shop.clickBtnProceedToCheckout();
+        shop.clickBtnProceedToCheckoutSummary();
+        shop.clickBtnProceedToCheckoutAddress();
+        shop.clickCheckboxAgree();
+        shop.clickBtnProceedToCheckoutShipping();
 
+//      Verificar se o produto escolhido está correto
+        Assert.assertEquals(productName,shop.getProductNameOnCart());
+        Assert.assertEquals(productPrice,shop.getProductPriceOnCart());
+
+//      Seleciona o tipo de pagamento por transferência bancária
+        shop.clickBtnTypePayment();
+
+//      Finaliza a compra
+        shop.clickBtnConfirmMyOrder();
+        System.out.println("Compra finalizada com sucesso!");
 
 
 

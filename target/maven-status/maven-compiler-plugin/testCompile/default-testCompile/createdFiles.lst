@@ -5,6 +5,7 @@ elementMapper\ProductPageElementMapper.class
 utils\Utils.class
 pageObjects\CategoryPage.class
 pageObjects\HomePage.class
+elementMapper\ShoppingCartPageElementMapper.class
 pageObjects\MyAccountPage.class
 elementMapper\CreateAnAccountPageElementMapper.class
 pageObjects\ProductPage.class
@@ -13,6 +14,7 @@ pageObjects\CreateAnAccountPage.class
 elementMapper\MyAccountPageElementMapper.class
 elementMapper\HomePageElementMapper.class
 pageObjects\LoginPage.class
+pageObjects\ShoppingCartPage.class
 pageObjects\BasePage.class
 elementMapper\SearchPageElementMapper.class
 pageObjects\SearchPage.class
