@@ -1,7 +1,9 @@
 package tests;
 
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
@@ -15,15 +17,22 @@ import java.util.Random;
 
 import static org.junit.Assert.*;
 
+@Feature("Testes num site de E-commerce")
 public class SetupTest extends BaseTests{
 
     @Test
+    @Story("Abrir o site")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Testar acesso ao site")
     public void testOpeningBrowserAndLoadingPage(){
         assertTrue(Browser.getCurrentDriver().getCurrentUrl().contains(Utils.getBaseUrl()));
         System.out.println("Abrimos o navegador e carregamos a URL!");
     }
 
     @Test
+    @Story("Realizar o Login")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Testar Login")
     public void testLogin(){
 
         //Inciar as páginas
@@ -50,15 +59,18 @@ public class SetupTest extends BaseTests{
     }
 
     @Test
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Testar de busca por produto")
     public void testSearch(){
 
         String quest = "DRESS";
         String questResult = "7";
-//        Iniciar as páginas
+
+//      Iniciar as páginas
         HomePage home = new HomePage();
         SearchPage search = new SearchPage();
 
-//        Fazer a pesquisa
+//      Fazer a pesquisa
         home.doSearch(quest);
 
 //      Validar a pesquisa
@@ -68,6 +80,7 @@ public class SetupTest extends BaseTests{
     }
 
     @Test
+    @DisplayName("Acessar página categoria")
     public void testAccessCategoryTSshirts(){
 //      Iniciar as páginas
         HomePage home = new HomePage();
@@ -81,15 +94,16 @@ public class SetupTest extends BaseTests{
     }
 
     @Test
+    @DisplayName("Acessar página do produto")
     public void testAddProductToProductPage(){
 //      Acessar a categoria T-Shirts
         testAccessCategoryTSshirts();
 
-//      Inicia as páginas
+//      Iniciar as páginas
         CategoryPage category = new CategoryPage();
         ProductPage pdp = new ProductPage();
 
-//      Salva o nome do produto na página de categoria
+//      Salvar o nome do produto na página de categoria
         String nameProductCategory = category.getProductNameCategory();
 
 //      Clicar em More e direcionar para a página do produto
@@ -127,24 +141,24 @@ public class SetupTest extends BaseTests{
         String alias = "Via láctea";
 
 
-//      Inicia as páginas
+//      Iniciar as páginas
         HomePage home = new HomePage();
         LoginPage createAccount = new LoginPage();
         CreateAnAccountPage account = new CreateAnAccountPage();
 
-//      Clica  no botão login e redireciona para a página de login
+//      Clicar  no botão login e redireciona para a página de login
         home.clickBtnLogin();
         System.out.println("Clicou em Sign In e redirecionou para a página de login");
         assertTrue(Browser.getCurrentDriver().getCurrentUrl()
         .contains(Utils.getBaseUrl().concat("index.php?controller=authentication&back=my-account")));
 
-//      Insere o email no campo email adress e clica no botão Create an Account
+//      Inserir o email no campo email adress e clica no botão Create an Account
         createAccount.fillEmailAdress(mail);
         System.out.println("Preencheu o campo Email Adress");
         createAccount.clickBtnCreateAnAccout();
         System.out.println("Clicou no botão Create an Account");
 
-//      Insere as informações na página Create An Account
+//      Inserir as informações na página Create An Account
         account.clickRadioGender();
         account.fillCFirstName(cFirstName);
         account.fillCLastName(cLastName);
@@ -189,26 +203,26 @@ public class SetupTest extends BaseTests{
         testLogin();
         testSearch();
 
-//      Inicia as páginas
+//      Iniciar as páginas
         SearchPage search = new SearchPage();
         ShoppingCartPage shop = new ShoppingCartPage();
-//      Seleciona o produto
+//      Selecionar o produto
         search.clickSelectedProduct();
-//      Seleciona a quantidade do produto
+//      Selecionar a quantidade do produto
         search.fillQty(qty);
-//      Seleciona o tamanho do produto
+//      Selecionar o tamanho do produto
         search.clickSelectSize(size);
-//      Seleciona a cor do produto
+//      Selecionar a cor do produto
         search.selectColor();
 
-//      Guarda o nome do produto e valor para conferir na finalização da compra
+//      Guardar o nome do produto e valor para conferir na finalização da compra
         String productName = search.getProductNameAddToCart();
         String productPrice = search.getProductPriceAddToCart();
 
-//      Adiciona o produto ao carrinho
+//      Adicionar o produto ao carrinho
         search.clickBtnAddToCart();
 
-//      Confirmação dos dados do cliente e do produto
+//      Confirmar os dados do cliente e do produto
         shop.clickBtnProceedToCheckout();
         shop.clickBtnProceedToCheckoutSummary();
         shop.clickBtnProceedToCheckoutAddress();
@@ -219,10 +233,10 @@ public class SetupTest extends BaseTests{
         Assert.assertEquals(productName,shop.getProductNameOnCart());
         Assert.assertEquals(productPrice,shop.getProductPriceOnCart());
 
-//      Seleciona o tipo de pagamento por transferência bancária
+//      Selecionar o tipo de pagamento por transferência bancária
         shop.clickBtnTypePayment();
 
-//      Finaliza a compra
+//      Finalizar a compra
         shop.clickBtnConfirmMyOrder();
         System.out.println("Compra finalizada com sucesso!");
 

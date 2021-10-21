@@ -1,97 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tests.SetupTest" time="80.191" tests="7" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="tests.SetupTest" time="147.188" tests="7" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="16"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\CWI Reset Level 2\projeto-automacao-cwi-reset\target\test-classes;C:\CWI Reset Level 2\projeto-automacao-cwi-reset\target\classes;C:\Users\Assunção Luna\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Assunção Luna\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Assunção Luna\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Assunção Luna\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Assunção Luna\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Assunção Luna\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Assunção Luna\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Assunção Luna\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Assunção Luna\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Assunção Luna\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Assunção Luna\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Assunção Luna\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\Assunção Luna\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\Assunção Luna\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Assunção Luna\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;"/>
+    <property name="idea.version" value="2021.2.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin"/>
+    <property name="java.vm.version" value="25.301-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="java.vm.specification.version" value="16"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="BR"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\ASSUNO~1\AppData\Local\Temp\surefire5387291400367325530\surefirebooter6205220914590406205.jar C:\Users\Assunção Luna\AppData\Local\Temp\surefire5387291400367325530 2021-10-20T23-45-23_096-jvmRun1 surefire9426316340189969449tmp surefire_06118199310554417803tmp"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\CWI Reset Level 2\projeto-automacao-cwi-reset\target\test-classes;C:\CWI Reset Level 2\projeto-automacao-cwi-reset\target\classes;C:\Users\Assunção Luna\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Assunção Luna\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Assunção Luna\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Assunção Luna\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Assunção Luna\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Assunção Luna\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Assunção Luna\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Assunção Luna\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Assunção Luna\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Assunção Luna\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Assunção Luna\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Assunção Luna\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Assunção Luna\.m2\repository\io\qameta\allure\allure-junit4\2.15.0\allure-junit4-2.15.0.jar;C:\Users\Assunção Luna\.m2\repository\io\qameta\allure\allure-java-commons\2.15.0\allure-java-commons-2.15.0.jar;C:\Users\Assunção Luna\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Assunção Luna\.m2\repository\io\qameta\allure\allure-model\2.15.0\allure-model-2.15.0.jar;"/>
-    <property name="allure.results.directory" value="C:\CWI Reset Level 2\projeto-automacao-cwi-reset\target/allure-results"/>
-    <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Assunção Luna"/>
-    <property name="user.language" value="pt"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2021-07-20"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-16.0.2"/>
-    <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\CWI Reset Level 2\projeto-automacao-cwi-reset"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset"/>
+    <property name="java.runtime.version" value="1.8.0_301-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\SEMAPE\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_301\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_301\bin;%MAVEN_HOME%\bin;C:\Java\gradle-7.2\bin;C:\Program Files\nodejs\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\SEMAPE\scoop\shims;C:\Users\SEMAPE\AppData\Local\Microsoft\WindowsApps;C:\wamp64\bin\php\php7.3.21;C:\Users\SEMAPE\composer;C:\Users\SEMAPE\AppData\Roaming\Composer\vendor\bin;C:\Users\SEMAPE\AppData\Local\ComposerSetup\bin;C:\Users\SEMAPE\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SEMAPE\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\plugins\maven\lib\maven3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ASSUNO~1\AppData\Local\Temp\surefire5387291400367325530\surefirebooter6205220914590406205.jar"/>
-    <property name="user.script" value=""/>
+    <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="16.0.2+7-67"/>
-    <property name="user.name" value="Assunção Luna"/>
-    <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\Assunção Luna\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\ASSUNO~1\AppData\Local\Temp\"/>
-    <property name="idea.version" value="2021.2.3"/>
-    <property name="java.version" value="16.0.2"/>
-    <property name="user.dir" value="C:\CWI Reset Level 2\projeto-automacao-cwi-reset"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-16.0.2\bin;C:\Program Files\apache-maven-3.8.3\bin;C:\Users\Assunção Luna\scoop\apps\allure\current\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Assunção Luna\scoop\shims;C:\Users\Assunção Luna\AppData\Local\Microsoft\WindowsApps;C:\Users\Assunção Luna\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\bin;C:\wamp64\bin\php\php7.4.9;C:\Users\Assunção Luna\AppData\Local\ComposerSetup\bin;C:\Users\Assunção Luna\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.1\bin;C:\Users\Assunção Luna\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin;."/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="user.home" value="C:\Users\SEMAPE"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="SEMAPE"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_301\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.1 clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_301"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="16.0.2+7-67"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="60.0"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testCreateAnAccount" classname="tests.SetupTest" time="17.575"/>
-  <testcase name="testOpeningBrowserAndLoadingPage" classname="tests.SetupTest" time="6.433"/>
-  <testcase name="testLogin" classname="tests.SetupTest" time="9.743"/>
-  <testcase name="testShoppingCart" classname="tests.SetupTest" time="17.283">
-    <error message="java.lang.reflect.InvocationTargetException&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-5ETF5PP&apos;, ip: &apos;10.0.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.json.JsonException">org.openqa.selenium.json.JsonException: 
-java.lang.reflect.InvocationTargetException
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5ETF5PP', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: driver.version: RemoteWebDriver
-	at tests.SetupTest.testCreateAnAccount(SetupTest.java:142)
-	at tests.SetupTest.testShoppingCart(SetupTest.java:183)
-Caused by: java.lang.reflect.InvocationTargetException
-	at tests.SetupTest.testCreateAnAccount(SetupTest.java:142)
-	at tests.SetupTest.testShoppingCart(SetupTest.java:183)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":".clearfix .radio-inline"}
-  (Session info: chrome=94.0.4606.81)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-5ETF5PP', ip: '10.0.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ASSUNO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1e071b6263de7410019aef8a7ee...}
-Session ID: 1e071b6263de7410019aef8a7eef238f
-*** Element info: {Using=css selector, value=.clearfix .radio-inline}
-	at tests.SetupTest.testCreateAnAccount(SetupTest.java:142)
-	at tests.SetupTest.testShoppingCart(SetupTest.java:183)
-</error>
-    <system-out><![CDATA[Clicou em Sign In e redirecionou para a página de login
-Preencheu o campo Email Adress
-Clicou no botão Create an Account
-]]></system-out>
-    <system-err><![CDATA[out. 20, 2021 11:46:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testAddProductToProductPage" classname="tests.SetupTest" time="12.85"/>
-  <testcase name="testAccessCategoryTSshirts" classname="tests.SetupTest" time="7.429"/>
-  <testcase name="testSearch" classname="tests.SetupTest" time="8.612"/>
+  <testcase name="testCreateAnAccount" classname="tests.SetupTest" time="25.924"/>
+  <testcase name="testOpeningBrowserAndLoadingPage" classname="tests.SetupTest" time="7.285"/>
+  <testcase name="testLogin" classname="tests.SetupTest" time="14.839"/>
+  <testcase name="testShoppingCart" classname="tests.SetupTest" time="58.31"/>
+  <testcase name="testAddProductToProductPage" classname="tests.SetupTest" time="16.72"/>
+  <testcase name="testAccessCategoryTSshirts" classname="tests.SetupTest" time="12.603"/>
+  <testcase name="testSearch" classname="tests.SetupTest" time="11.015"/>
 </testsuite>

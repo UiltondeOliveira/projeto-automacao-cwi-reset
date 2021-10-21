@@ -1,21 +1,21 @@
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\ProductPageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\tests\BaseTests.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\LoginPage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\tests\SetupTest.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\ShoppingCartPage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\BasePage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\HomePage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\LoginPageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\SearchPageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\utils\Utils.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\utils\Browser.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\CreateAnAccountPageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\MyAccountPageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\MyAccountPage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\SearchPage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\CategoryPageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\HomePageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\CreateAnAccountPage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\CategoryPage.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\elementMapper\ShoppingCartPageElementMapper.java
-C:\CWI Reset Level 2\projeto-automacao-cwi-reset\src\test\java\pageObjects\ProductPage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\LoginPageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\utils\Utils.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\HomePage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\ProductPage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\MyAccountPage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\MyAccountPageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\CategoryPage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\ShoppingCartPage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\CreateAnAccountPage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\ShoppingCartPageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\SearchPage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\CategoryPageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\CreateAnAccountPageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\BasePage.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\HomePageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\ProductPageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\elementMapper\SearchPageElementMapper.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\tests\BaseTests.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\tests\SetupTest.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\utils\Browser.java
+F:\Workspace\CWI-RESET\projeto-automacao-cwi-reset\src\test\java\pageObjects\LoginPage.java
